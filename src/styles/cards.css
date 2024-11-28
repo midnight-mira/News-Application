@@ -1,0 +1,34 @@
+.card-container {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    text-align: justify;
+    overflow: hidden;
+    flex: 1;
+    align-items: stretch;
+    border-bottom: 2px solid black;
+    
+}
+
+.image-container {
+    flex: 1 0 1;
+    
+}
+
+.card-info-container {
+    margin-left: 2px;
+    flex: 2 0 ;
+    padding: 2px;
+}
+
+img {
+    object-fit: cover;
+    height: 204px;
+    width: 184px;
+}
+
+.card-container.active {
+    background-color: bisque ;
+}
+
+

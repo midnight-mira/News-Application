@@ -1,0 +1,7 @@
+<div className='feed-card'>
+      {data ? (
+        data.map((article, index) => <Cards key={index} article={article} />)
+      ) : (
+        <p>Loading...</p>
+      )}
+    </div>
