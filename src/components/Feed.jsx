@@ -2,7 +2,7 @@ import React from 'react'
 import Cards from './Cards'
 import '../styles/feed.css'
 import { useEffect, useState } from 'react'
-import { fetchData, fetchDataWithCategory } from '../hooks/useFetch'
+import { fetchData, fetchDataWithCategory } from '../hooks/dataFetching.js'
 
 const Feed = ({ category = 'default', change, status }) => {
   const [data, setData] = useState(null)
