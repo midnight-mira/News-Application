@@ -9,9 +9,9 @@
 }
 
 .cross-button {
-    align-self: flex-end;
     padding: 2px;
     margin-bottom: 2px;
+    margin-right: 0;
 }
 
 .news-info {

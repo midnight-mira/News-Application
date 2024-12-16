@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { Outlet } from 'react-router-dom'
-import Feed from './components/Feed'
 import Navbar from "./components/Navbar"
 import './Layout.css'
 import NewsSection from './components/NewsSection'
@@ -25,15 +24,14 @@ const Layout = () => {
       <div className="navbar">
         <Navbar />
       </div>
-      <h2>Name</h2>
       <div className='container scrollable'>
         <div className='feed-container '>
-          <Feed change={handleShowNews} status={clickedArticle} />
+          <Outlet context={{ handleShowNews, clickedArticle }} />
         </div>
         
         {showNews === true ?
           <div className='news-container'>
-            <NewsSection article={clickedArticle} />
+            <NewsSection article={clickedArticle} onClose={()=>setShowNews(false)} />
           </div>
           :
           ""

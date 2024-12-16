@@ -6,13 +6,11 @@
     overflow: hidden;
     flex: 1;
     align-items: stretch;
-    border-bottom: 2px solid black;
-    
+    border-bottom: 1px solid black;
 }
 
 .image-container {
-    flex: 1 0 1;
-    
+    flex: 1 0 2;
 }
 
 .card-info-container {

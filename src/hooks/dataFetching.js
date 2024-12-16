@@ -17,7 +17,7 @@ export const fetchData = async () => {
 
 export const fetchDataWithCategory = async(category) =>{
     try {
-        const url = `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=${API_KEY}`
+        const url = `https://newsapi.org/v2/top-headlines?category=${category}&apiKey=${API_KEY}`
         const response = await fetch(url)  
         if (!response.ok) {
             throw new Error('Network response was not ok.');
